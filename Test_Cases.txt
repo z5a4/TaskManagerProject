@@ -1,0 +1,6 @@
+Test Cases          | Actual Output       | Test Step                                 | Description
+-----------------------------------------------------------------------------------------------------------------------------
+Login Test          |Login Success        |Email, Password Required                   |Test the login functionality
+Register Test       |Registration Success |Email, Password, Name, Phone Required      |Test the registration functionality
+New Task Test       |Task Created         |Title, Description, Status, Date Required  |Test creating a new task
+Edit Task Test      |Task Edited          |Title, Description, Status, Date Required  |Test editing an existing task

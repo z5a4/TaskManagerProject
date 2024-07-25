@@ -1,0 +1,92 @@
+Task Manager API Documentation
+This document provides an overview of the APIs available for the Task Manager application. The Task Manager application allows users to manage tasks and users through a client-server architecture.
+
+Base URL
+http://localhost:5173/api
+
+Authentication
+Register a new user
+Endpoint: POST /register
+Request Body:
+
+json
+{
+  "username": "string",
+  "password": "string"
+}
+Response: 201 Created or error message
+
+Login
+Endpoint: POST /login
+Request Body:
+
+json
+{
+  "username": "string",
+  "password": "string"
+}
+Response: 200 OK with authentication token or error message
+
+Logout
+Endpoint: POST /logout
+Headers:
+
+makefile
+Copy code
+Authorization: Bearer <token>
+Response: 200 OK or error message
+
+Task Management
+Get all tasks
+Endpoint: GET /tasks
+Response: 200 OK with list of tasks
+
+Get task by ID
+Endpoint: GET /tasks/:id
+Response: 200 OK with task details or error message
+
+Get tasks by status (Pending, Completed, ToDo)
+Endpoint: GET /getPendingTask, GET /getCompletedTask, GET /getToDoTask
+Response: 200 OK with list of tasks by status
+
+Create a new task
+Endpoint: POST /tasks
+Request Body:
+
+json
+{
+  "title": "string",
+  "description": "string",
+  "status": "Pending" | "In Progress" | "Completed"
+}
+Response: 201 Created with task details or error message
+
+Update a task
+Endpoint: PUT /tasks/:id
+Request Body:
+
+Copy code
+{
+  "title": "string",
+  "description": "string",
+  "status": "Pending" | "In Progress" | "Completed"
+}
+Response: 200 OK with updated task details or error message
+
+Delete a task
+Endpoint: DELETE /tasks/:id
+Response: 200 OK or error message
+
+
+Getting Started
+Clone the repository.
+Navigate to the server folder and run npm install to install server dependencies.
+Start the server using npm start.
+Navigate to the client folder and run npm install to install client dependencies.
+Start the client using npm start.
+Contributing
+Contributions are welcome! If you encounter issues or have suggestions, please open an issue or submit a pull request.
+
+License
+This project is licensed under the MIT License.
+
