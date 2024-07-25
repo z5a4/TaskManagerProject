@@ -1,0 +1,24 @@
+Here’s a step-by-step outline of the Task Manager system in bullet points:
+
+- User Authentication:
+  - Register a new account or log in with existing credentials.
+  - After successful login, users are granted access to task management features.
+
+- Task Management:
+  - Add New Task:
+    - Provide task details including title, description, status, creation date, and update date.
+  - Update Task:
+    - Modify the task details as needed.
+  - Delete Task:
+    - Remove tasks from the system.
+
+- View Tasks:
+  - Filter and view tasks based on their status:
+    - Pending: Tasks that are yet to be started.
+    - Completed: Tasks that have been finished.
+    - To Do: Tasks that are planned but not yet started.
+
+- Logout:
+  - Securely log out of the application when finished.
+
+This outline provides a clear and concise overview of how users interact with the Task Manager system.
